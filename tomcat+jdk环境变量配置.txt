@@ -1,0 +1,10 @@
+CATALINA_BASE
+F:\neweclipse\adt-bundle-windows-x86_64-20131030\tomcat6.0
+CATALINA_HOME
+F:\neweclipse\adt-bundle-windows-x86_64-20131030\tomcat6.0
+CLASSPATH
+.%JAVA_HOME%\bin;%JAVA_HOME%\lib\tools.jar;%JAVA_HOME%\lib\dt.jar;
+JAVA_HOME:
+C:\Program Files (x86)\Java\jdk1.6.0_03
+Path
+%catalina_home%\lib;%catalina_home%\bin;%java_home%\bin;
