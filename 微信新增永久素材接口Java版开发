@@ -9,7 +9,7 @@ https://api.weixin.qq.com/cgi-bin/material/add_material?access_token=ACCESS_TOKE
 调用示例（使用curl命令，用FORM表单方式新增一个其他类型的永久素材，curl命令的使用请自行查阅资料）
 
 主要遇到的问题就是这里如何用java模拟curl命令？
-在我的笔记里GetMediaUrlUtil这个文件中有具体实现的代码，其中getAddMaterialMediaId这个方法是上传永久素材之后获取返回的media_id的方法，其中引用的
+在我的personal-note里GetMediaUrlUtil这个文件中有具体实现的代码，其中getAddMaterialMediaId这个方法是上传永久素材之后获取返回的media_id的方法，其中引用的
 WeixinMsgSysConst.getWeixinAddMaterialUrl(accessToken,type)这个方法主要是实现向微信服务器请求的参数拼接，然后返回一个完整的url：
 https://api.weixin.qq.com/cgi-bin/material/add_material?access_token=ACCESS_TOKEN&type=TYPE这里的参数在微信的开发文档里写的很清楚，可以自行查看。
 
