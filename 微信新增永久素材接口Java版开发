@@ -1,0 +1,9 @@
+本文默认第三方平台和微信公众号接口的发开已经成功完成
+通过微信公众平台的开发文档https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1444738729，我碰到的主要问题是如何上传图片、视频等素材文件。
+以下是微信公众平台的开发文档文档中的描述：
+新增其他类型永久素材
+接口调用请求说明
+通过POST表单来调用接口，表单id为media，包含需要上传的素材内容，有filename、filelength、content-type等信息。请注意：图片素材将进入公众平台官网素材管理模块中的默认分组。
+http请求方式: POST，需使用https
+https://api.weixin.qq.com/cgi-bin/material/add_material?access_token=ACCESS_TOKEN&type=TYPE
+调用示例（使用curl命令，用FORM表单方式新增一个其他类型的永久素材，curl命令的使用请自行查阅资料）
