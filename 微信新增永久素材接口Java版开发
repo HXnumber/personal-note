@@ -1,4 +1,4 @@
-本文默认第三方平台和微信公众号接口的发开已经成功完成
+本文默认第三方平台和微信公众号接口的开开发已经成功完成
 通过微信公众平台的开发文档https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1444738729，我碰到的主要问题是如何上传图片、视频等素材文件。
 以下是微信公众平台的开发文档文档中的描述：
 新增其他类型永久素材
@@ -7,3 +7,9 @@
 http请求方式: POST，需使用https
 https://api.weixin.qq.com/cgi-bin/material/add_material?access_token=ACCESS_TOKEN&type=TYPE
 调用示例（使用curl命令，用FORM表单方式新增一个其他类型的永久素材，curl命令的使用请自行查阅资料）
+
+主要遇到的问题就是这里如何用java模拟curl命令？
+在我的笔记里GetMediaUrlUtil这个文件中有具体实现的代码，其中getAddMaterialMediaId这个方法是上传永久素材之后获取返回的media_id的方法，其中引用的
+WeixinMsgSysConst.getWeixinAddMaterialUrl(accessToken,type)这个方法主要是实现这个请求：
+https://api.weixin.qq.com/cgi-bin/material/add_material?access_token=ACCESS_TOKEN&type=TYPE这里的参数在微信的开发文档里写的很清楚，可以自行查看。
+
